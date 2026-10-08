@@ -1,0 +1,17 @@
+.beneficios__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2.5rem 2rem;
+}
+.beneficios__grid article {
+  border-top: 3px solid var(--primary);
+  padding-top: 1.25rem;
+}
+.beneficios__grid h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+.beneficios__grid p {
+  opacity: 0.8;
+  font-size: 1rem;
+}

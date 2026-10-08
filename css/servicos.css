@@ -1,0 +1,22 @@
+.servicos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+.servicos__grid article {
+  background: var(--secondary);
+  padding: 2rem;
+  border-radius: 14px;
+  border: 1px solid var(--primary-soft);
+  transition: border-color 0.2s;
+}
+.servicos__grid article:hover {
+  border-color: var(--primary);
+}
+.servicos__grid h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.6rem;
+}
+.servicos__grid p {
+  opacity: 0.8;
+}

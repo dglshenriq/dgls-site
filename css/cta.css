@@ -1,0 +1,17 @@
+.cta {
+  background: var(--primary);
+  color: var(--secondary);
+  padding: clamp(4rem, 8vw, 6rem) 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(244, 241, 235, 0.12);
+}
+.cta h2 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  max-width: 20ch;
+  margin: 0 auto 1rem;
+}
+.cta p {
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}

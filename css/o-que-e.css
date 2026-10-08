@@ -1,0 +1,93 @@
+/* o-que-e.css — usa as variáveis e classes de base.css */
+.oque__compare {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+.oque__card {
+  padding: 2rem;
+  border-radius: 14px;
+  background: var(--secondary);
+  border: 1px solid var(--primary-soft);
+}
+.oque__card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+.oque__def {
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+.oque__card li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 0.8rem;
+  opacity: 0.85;
+}
+.oque__card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 0.7rem;
+  height: 2px;
+  background: currentColor;
+}
+.oque__card--destaque {
+  background: var(--primary);
+  color: var(--secondary);
+  border-color: var(--primary);
+}
+.oque__card--destaque li {
+  opacity: 0.95;
+}
+.oque__card--destaque li::before {
+  background: var(--accent);
+  height: 3px;
+}
+
+.oque__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+.oque__reasons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+.oque__reasons article {
+  border-top: 3px solid var(--primary);
+  padding-top: 1.25rem;
+}
+.oque__reasons h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+}
+.oque__reasons p {
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.oque__help {
+  font-weight: 500;
+}
+.oque__help a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 700;
+}
+.oque__help a:hover {
+  color: #1d2a9a;
+}
+
+@media (max-width: 860px) {
+  .oque__compare,
+  .oque__reasons {
+    grid-template-columns: 1fr;
+  }
+  .oque__reasons {
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,28 @@
+.sobre__inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+.sobre__avatar {
+  width: min(260px, 30vw);
+  height:auto; 
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover; /* corta a foto sem deformar */
+  object-position: center top; /* mantém o rosto visível */
+  background: var(--primary);
+}
+.sobre__text p {
+  max-width: 62ch;
+  margin-bottom: 1rem;
+  opacity: 0.88;
+}
+@media (max-width: 760px) {
+  .sobre__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .sobre__avatar {
+    width: 180px;  }
+}
